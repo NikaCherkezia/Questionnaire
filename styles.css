@@ -1,0 +1,240 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body::before  {
+   
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background-image:linear-gradient(
+        115deg,
+        rgba(199, 199, 245, 0.8),
+        rgba(151, 92, 228, 0.7)
+      ), url(images/background.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;  
+    background-position: center;     
+}
+
+/*
+======================
+Header
+======================
+*/
+
+header div {
+    text-align: center;
+    margin-top: 120px;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 5px rgba(221, 87, 87, 0.726);
+    font-size: 25px;
+}
+
+/*
+======================
+Form Background
+======================
+*/
+#survey {
+    background-image: linear-gradient(165deg, rgb(196, 97, 241), rgb(100, 159, 236));
+    border-radius: 10px;
+    max-width: 40vw;
+    margin: auto;
+}
+
+#survey-form {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 40px;
+}
+
+/*
+======================
+Horizontal Fields
+======================
+*/
+
+.horizontalFields {
+    position: relative;
+    background: transparent;    
+}
+
+.horizontalFields label {
+    color: rgb(233, 239, 247);
+    font-size: 1.5vw;
+    font-weight: 800;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.horizontalFields input {
+    display: block;
+    margin-bottom: 25px;
+    border: solid rgb(77, 55, 173);
+    border-radius: 5px;
+    padding: 7px 3px;
+    width: 100%;
+}
+
+.horizontalFields select {
+    display: block;
+    margin-bottom: 20px;
+    border: solid rgb(77, 55, 173);
+    border-radius: 5px;
+    padding: 7px 3px;
+    width: 100%;
+}
+
+/*
+======================
+Radio Fields
+======================
+*/
+.radioFields {
+    position: relative;
+    background: transparent;
+}
+
+.radioFields h1 {
+    color: rgb(233, 239, 247);
+    font-size: 1.5vw;
+    font-weight: 800;
+    display: block;
+    margin-bottom: 10px;
+}
+.radioFields label {
+    color: rgb(233, 239, 247);
+    font-size: 1vw;
+    font-weight: 800;
+    display: block;
+    margin-bottom: 10px;
+}
+#lastLabel {
+    margin-bottom: 30px;
+}
+input[type=radio] {
+    border: 0px;
+    width: 1.25em;
+    height: 1.25em;
+    margin-right: 10px;
+    display: inline-block;
+}
+
+/*
+======================
+Check List
+======================
+*/
+.checkFields {
+    position: relative;
+    background: transparent;
+}
+
+.checkFields h1 {
+    color: rgb(233, 239, 247);
+    font-size: 1.5vw;
+    font-weight: 800;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.checkFields label {
+    color: rgb(233, 239, 247);
+    font-size: 1vw;
+    font-weight: 800;
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type=checkbox] {
+    border: 0px;
+    width: 1.25em;
+    height: 1.25em;
+    margin-right: 10px;
+    display: inline-block;
+}
+
+
+/*
+======================
+Smaller Texts
+======================
+*/
+.smallText {
+    display: inline-block;
+    font-size: 1.2vw;
+    margin-top: 0;
+    margin-bottom: 0;
+
+}
+/*
+======================
+Comment Field
+======================
+*/ 
+.commentField {
+    position: relative;
+    background: transparent;
+}
+
+.commentField label {
+    color: rgb(233, 239, 247);
+    font-size: 1.5vw;
+    font-weight: 800;
+    display: block;
+    margin-bottom: 10px;
+}
+textarea {
+    
+    position: relative;
+    margin-bottom: 25px;
+    border: solid rgb(77, 55, 173);
+    border-radius: 5px;
+    min-height: 10em;
+    text-align: left;
+    width: 100%;
+    resize: vertical;
+    font-size: 1vw;
+    
+    
+}
+
+.commentField ::placeholder {
+    position: absolute;
+    top: 5px;
+    font-size: 1vw;
+    
+}
+
+/*
+======================
+Button
+======================
+*/ 
+
+button {
+    border: solid rgb(77, 55, 173);
+    width: 100%;
+    min-height: 4em;
+    margin-bottom: 40px;
+    background-color: yellowgreen;
+    font-size: 15px;
+    font-weight: 800;
+    
+    
+}
+
+button:hover {
+    border-radius: 10px;
+    box-shadow: 5px 10px 18px #888888;
+    font-size: 17px;
+    text-shadow: 2px 2px 5px rgb(231, 159, 159);
+
+}
